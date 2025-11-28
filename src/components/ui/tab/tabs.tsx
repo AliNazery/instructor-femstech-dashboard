@@ -64,7 +64,7 @@ export const TabsList = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("inline-flex bg-brand-950 rounded-lg p-1", className)}>
+    <div className={cn("inline-flex bg-brand-500 rounded-lg p-1", className)}>
       {children}
     </div>
   );
@@ -92,7 +92,7 @@ export const TabsTrigger = ({
       className={cn(
         "px-4 py-1.5 text-sm font-medium rounded-md transition-all duration-200",
         isActive
-          ? "bg-brand-950 text-white shadow"
+          ? "bg-brand-500 text-white shadow"
           : "text-gray-600 hover:text-gray-900",
         className
       )}

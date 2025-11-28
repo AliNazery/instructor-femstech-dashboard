@@ -15,8 +15,8 @@ export function Button({
   const base =
     "px-4 py-2 text-sm font-medium rounded-lg transition focus:outline-none";
   const variants = {
-    default: "text-brand-950 border border-brand-950 hover:bg-brand-700 hover:text-white",
-    outline: "border border-brand-950 text-brand-950 hover:bg-brand-700",
+    default: "text-brand-500 border border-brand-500 hover:bg-brand-700 hover:text-white",
+    outline: "border border-brand-500 text-brand-500 hover:bg-brand-700",
   };
 
   return (

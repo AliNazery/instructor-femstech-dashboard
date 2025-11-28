@@ -113,7 +113,7 @@ export default function ForgotPasswordForm() {
               <div className="flex items-center justify-between">
                 <Link
                   to="/"
-                  className="text-sm text-brand-950 hover:text-brand-700"
+                  className="text-sm text-brand-500 hover:text-brand-700"
                 >
                   Back to Sign In
                 </Link>

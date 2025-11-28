@@ -25,7 +25,7 @@ const statusColors = {
 };
 
 const ReviewRow: FC<ReviewRowProps> = ({ review, onApprove, onReject }) => (
-  <div className="p-4 bg-brand-50 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border-l-4 border-brand-950">
+  <div className="p-4 bg-brand-50 rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border-l-4 border-brand-500">
     <div className="flex justify-between items-start">
       <div className="flex flex-col gap-1">
         <h3 className="font-semibold text-gray-800">{review.courseTitle}</h3>

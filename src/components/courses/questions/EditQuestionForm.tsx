@@ -160,7 +160,7 @@ const EditQuestionForm: FC<EditQuestionFormProps> = ({
           <button
             type="button"
             onClick={addOption}
-            className="text-sm px-3 py-1 rounded bg-brand-950 text-white hover:bg-brand-700"
+            className="text-sm px-3 py-1 rounded bg-brand-500 text-white hover:bg-brand-700"
           >
             Add option
           </button>
@@ -201,7 +201,7 @@ const EditQuestionForm: FC<EditQuestionFormProps> = ({
 
       <button
         type="submit"
-        className="bg-brand-950 hover:bg-brand-700  text-white px-4 py-2 rounded disabled:opacity-50"
+        className="bg-brand-500 hover:bg-brand-700  text-white px-4 py-2 rounded disabled:opacity-50"
         disabled={isLoading}
       >
         {isLoading ? "Updating..." : "Update"}

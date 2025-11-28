@@ -7,7 +7,7 @@ export default function RecentEnrollments() {
 
   if (isLoading)
     return (
-      <div className="rounded-2xl border border-brand-950 bg-white dark:bg-gray-900/30 p-5">
+      <div className="rounded-2xl border border-brand-500 bg-white dark:bg-gray-900/30 p-5">
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Loading recent enrollments...
         </p>
@@ -47,7 +47,7 @@ export default function RecentEnrollments() {
   const limitedEnrollments = enrollments.slice(0, 4);
 
   return (
-    <div className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+    <div className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
@@ -56,7 +56,7 @@ export default function RecentEnrollments() {
         {enrollments.length > 4 && (
           <Link
             to="/instructor/all-enrollments"
-            className="text-xs text-brand-950 dark:text-brand-400 hover:underline"
+            className="text-xs text-brand-500 dark:text-brand-400 hover:underline"
           >
             View All
           </Link>
@@ -72,12 +72,12 @@ export default function RecentEnrollments() {
           {limitedEnrollments.map((en) => (
             <li
               key={en.id}
-              className="flex flex-col md:flex-row md:items-center justify-between rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 hover:scale-[1.02] hover:shadow-xl transition-transform w-full"
+              className="flex flex-col md:flex-row md:items-center justify-between rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 hover:scale-[1.02] hover:shadow-xl transition-transform w-full"
             >
               {/* Student Info */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full md:flex-1">
                 <div className="flex items-center justify-center w-9 h-9 rounded-full bg-brand-50 dark:bg-brand-900/30 shrink-0">
-                  <UserPlus className="w-4 h-4 text-brand-950 dark:text-brand-400" />
+                  <UserPlus className="w-4 h-4 text-brand-500 dark:text-brand-400" />
                 </div>
                 <div className="flex flex-col">
                   <p className="font-medium text-gray-800 dark:text-white/90">
@@ -123,7 +123,7 @@ export default function RecentEnrollments() {
 
 //   if (isLoading)
 //     return (
-//       <div className="rounded-2xl border border-brand-950 bg-white dark:bg-gray-900/30 p-5">
+//       <div className="rounded-2xl border border-brand-500 bg-white dark:bg-gray-900/30 p-5">
 //         <p className="text-sm text-gray-500 dark:text-gray-400">
 //           Loading recent enrollments...
 //         </p>
@@ -163,7 +163,7 @@ export default function RecentEnrollments() {
 //   const limitedEnrollments = enrollments.slice(0, 4);
 
 //   return (
-//     <div className=" rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+//     <div className=" rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
 //       <div className="flex items-center justify-between mb-4">
 //         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
 //           Recent Enrollments
@@ -171,7 +171,7 @@ export default function RecentEnrollments() {
 //         {enrollments.length > 4 && (
 //           <Link
 //             to="/instructor/all-enrollments"
-//             className="text-xs text-brand-950 dark:text-brand-400 hover:underline"
+//             className="text-xs text-brand-500 dark:text-brand-400 hover:underline"
 //           >
 //             View All
 //           </Link>
@@ -187,11 +187,11 @@ export default function RecentEnrollments() {
 //           {limitedEnrollments.map((en) => (
 //             <li
 //               key={en.id}
-//               className="flex flex-col sm:flex-row sm:items-center justify-between rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 hover:scale-[1.02] hover:shadow-xl transition-transform md:w-full"
+//               className="flex flex-col sm:flex-row sm:items-center justify-between rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 hover:scale-[1.02] hover:shadow-xl transition-transform md:w-full"
 //             >
 //               <div className="flex items-start gap-3">
 //                 <div className="flex items-center justify-center w-9 h-9 rounded-full bg-brand-50 dark:bg-brand-900/30">
-//                   <UserPlus className="w-4 h-4 text-brand-950 dark:text-brand-400" />
+//                   <UserPlus className="w-4 h-4 text-brand-500 dark:text-brand-400" />
 //                 </div>
 //                 <div>
 //                   <p className="font-medium text-gray-800 dark:text-white/90">

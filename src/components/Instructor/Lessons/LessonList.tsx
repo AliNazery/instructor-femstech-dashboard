@@ -108,7 +108,7 @@ export default function LessonList({ moduleId }: Readonly<LessonListProps>) {
       {lessons.map((lesson) => (
         <div
           key={lesson.id}
-          className="flex justify-between items-center px-3 py-2 rounded-lg bg-white dark:bg-neutral-800 border border-brand-950 hover:shadow-sm transition"
+          className="flex justify-between items-center px-3 py-2 rounded-lg bg-white dark:bg-neutral-800 border border-brand-500 hover:shadow-sm transition"
         >
           <button
             onClick={() => handleOpen(lesson)}

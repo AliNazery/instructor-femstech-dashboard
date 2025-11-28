@@ -151,7 +151,7 @@ const CreateCourseForm: FC<CreateCourseFormProps> = ({
 
       <button
         type="submit"
-        className="bg-brand-950 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
+        className="bg-brand-500 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
         disabled={isLoading}
       >
         {isLoading ? "Saving..." : "Save"}
@@ -209,7 +209,7 @@ function Dropdown<T>({
                     value={opt.value}
                     className={({ active }) =>
                       classNames(
-                        active ? "bg-brand-950 text-white" : "text-gray-900",
+                        active ? "bg-brand-500 text-white" : "text-gray-900",
                         "relative cursor-pointer select-none py-2 pl-3 pr-9"
                       )
                     }
@@ -225,7 +225,7 @@ function Dropdown<T>({
                           {opt.label}
                         </span>
                         {selected && (
-                          <span className="absolute top-1/2 right-3 -translate-y-1/2 text-brand-950">
+                          <span className="absolute top-1/2 right-3 -translate-y-1/2 text-brand-500">
                             <CheckIcon className="h-5 w-5" />
                           </span>
                         )}

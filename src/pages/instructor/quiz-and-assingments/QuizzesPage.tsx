@@ -91,7 +91,7 @@ export default function QuizzesPage() {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 justify-center bg-brand-950 px-4 py-2 text-white rounded-xl"
+            className="flex items-center gap-2 justify-center bg-brand-500 px-4 py-2 text-white rounded-xl"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back
@@ -103,7 +103,7 @@ export default function QuizzesPage() {
             <div className="mt-4 flex justify-end">
               <button
                 onClick={openCreateModal}
-                className="flex items-center  gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition"
+                className="flex items-center  gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition"
               >
                 <PlusCircle size={16} /> Add Quiz
               </button>

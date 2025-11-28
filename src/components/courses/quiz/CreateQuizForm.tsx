@@ -73,7 +73,7 @@ const CreateQuizForm: FC<CreateQuizFormProps> = ({
 
       <button
         type="submit"
-        className="bg-brand-950 text-white px-4 py-2 rounded-lg hover:bg-brand-700 disabled:opacity-50"
+        className="bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-700 disabled:opacity-50"
         disabled={isSubmitting}
       >
         {isSubmitting ? "Creating..." : "Create Quiz"}

@@ -33,7 +33,7 @@ export default function UpcomingDeadlines() {
 
   if (isError || !data?.data?.length) {
     return (
-      <div className="flex flex-col items-center justify-center h-48 rounded-xl border border-dashed border-brand-950 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/40">
+      <div className="flex flex-col items-center justify-center h-48 rounded-xl border border-dashed border-brand-500 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/40">
         <div className="flex flex-col items-center text-center space-y-2">
           {/* Icon */}
           <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full">
@@ -68,7 +68,7 @@ export default function UpcomingDeadlines() {
   const deadlines = (data?.data ?? []).slice(0, 3);
 
   return (
-    <div className="rounded-2xl border border-brand-950 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
+    <div className="rounded-2xl border border-brand-500 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
           Upcoming Assignment Deadlines
@@ -76,7 +76,7 @@ export default function UpcomingDeadlines() {
         {/* 🟢 Changed to Link */}
         <Link
           to="/instructor/assignments"
-          className="text-xs font-medium text-brand-950 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition"
+          className="text-xs font-medium text-brand-500 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition"
         >
           View All
         </Link>
@@ -86,7 +86,7 @@ export default function UpcomingDeadlines() {
         {deadlines.map((dl) => (
           <li
             key={dl.id}
-            className="flex justify-between items-start p-3 rounded-lg border border-brand-950 transition-transform duration-300 ease-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1 hover:bg-gray-50 dark:hover:bg-white/5"
+            className="flex justify-between items-start p-3 rounded-lg border border-brand-500 transition-transform duration-300 ease-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1 hover:bg-gray-50 dark:hover:bg-white/5"
           >
             <div className="flex items-start gap-3">
               <Clock className="size-5 mt-0.5 text-gray-400" />
@@ -154,12 +154,12 @@ export default function UpcomingDeadlines() {
 //   const deadlines = data.data;
 
 //   return (
-//     <div className="rounded-2xl border border-brand-950 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
+//     <div className="rounded-2xl border border-brand-500 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
 //       <div className="flex items-center justify-between mb-4">
 //         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
 //           Upcoming Assignment Deadlines
 //         </h3>
-//         <button className="text-xs font-medium text-brand-950 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition">
+//         <button className="text-xs font-medium text-brand-500 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300 transition">
 //           View All
 //         </button>
 //       </div>
@@ -168,7 +168,7 @@ export default function UpcomingDeadlines() {
 //         {deadlines.map((dl) => (
 //           <li
 //             key={dl.id}
-//             className="flex justify-between items-start p-3 rounded-lg border border-brand-950 transition-transform duration-300 ease-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1 hover:bg-gray-50 dark:hover:bg-white/5"
+//             className="flex justify-between items-start p-3 rounded-lg border border-brand-500 transition-transform duration-300 ease-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1 hover:bg-gray-50 dark:hover:bg-white/5"
 //           >
 //             <div className="flex items-start gap-3">
 //               <Clock className="size-5 mt-0.5 text-gray-400" />

@@ -115,7 +115,7 @@ export default function InstructorNotificationsPage() {
             <button
               onClick={handleMarkSelectedRead}
               disabled={marking}
-              className="flex items-center gap-2 px-4 py-2 bg-brand-950 text-white rounded-lg hover:bg-brand-700 transition text-sm"
+              className="flex items-center gap-2 px-4 py-2 bg-brand-500 text-white rounded-lg hover:bg-brand-700 transition text-sm"
             >
               {marking ? (
                 <Loader2 className="animate-spin h-4 w-4" />
@@ -189,9 +189,9 @@ export default function InstructorNotificationsPage() {
                               e.stopPropagation();
                               navigate(getTypeLink(n.type));
                             }}
-                            className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-brand-950 border border-blue-100 font-medium text-sm rounded-md transition-colors duration-150"
+                            className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-brand-500 border border-blue-100 font-medium text-sm rounded-md transition-colors duration-150"
                           >
-                            <Link2 size={14} className="text-brand-950" />
+                            <Link2 size={14} className="text-brand-500" />
                             Go to related section
                           </button>
                         )}
@@ -206,7 +206,7 @@ export default function InstructorNotificationsPage() {
                           e.stopPropagation();
                           markRead({ ids: [n.id] }).then(() => refetch());
                         }}
-                        className="text-xs text-brand-950 hover:text-white flex items-center gap-1"
+                        className="text-xs text-brand-500 hover:text-white flex items-center gap-1"
                       >
                         <CheckCheck size={14} /> Mark read
                       </Button>

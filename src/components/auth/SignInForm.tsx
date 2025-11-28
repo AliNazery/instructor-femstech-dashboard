@@ -145,7 +145,7 @@ export default function SignInForm() {
               <div className="flex items-center justify-between">
                 <Link
                   to="/forgot-password"
-                  className="text-sm text-brand-950 hover:text-brand-700"
+                  className="text-sm text-brand-500 hover:text-brand-700"
                 >
                   Forgot password?
                 </Link>
@@ -155,7 +155,7 @@ export default function SignInForm() {
                   Don't have an account?{" "}
                   <Link
                     to="/signup"
-                    className="text-brand-950 hover:text-brand-700 dark:text-brand-400"
+                    className="text-brand-500 hover:text-brand-700 dark:text-brand-400"
                   >
                     Sign Up
                   </Link>

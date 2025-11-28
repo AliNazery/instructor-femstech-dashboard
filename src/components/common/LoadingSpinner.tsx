@@ -15,7 +15,7 @@ export default function LoadingSpinner({
 
   return (
     <div className={containerClass}>
-      <Loader2 className="h-8 w-8 animate-spin text-brand-950 mb-3" />
+      <Loader2 className="h-8 w-8 animate-spin text-brand-500 mb-3" />
       <p className="text-sm text-gray-500">{text}</p>
     </div>
   );

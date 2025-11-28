@@ -23,7 +23,7 @@ export default function StudentQuizAnswersPage() {
         </p>
         <Link
           to="/instructor/enrollments"
-          className="flex items-center text-brand-950 hover:text-brand-700 text-sm font-medium"
+          className="flex items-center text-brand-500 hover:text-brand-700 text-sm font-medium"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />
           Back to Enrollments
@@ -50,7 +50,7 @@ export default function StudentQuizAnswersPage() {
         </p>
         <Link
           to="/instructor/enrollments"
-          className="flex items-center text-brand-950 hover:text-brand-700 text-sm font-medium"
+          className="flex items-center text-brand-500 hover:text-brand-700 text-sm font-medium"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />
           Back to Enrollments
@@ -87,7 +87,7 @@ export default function StudentQuizAnswersPage() {
         </div>
         <Link
           to="/instructor/enrollments"
-          className="flex items-center text-sm text-brand-950 hover:text-brand-700 font-medium"
+          className="flex items-center text-sm text-brand-500 hover:text-brand-700 font-medium"
         >
           <ArrowLeft className="w-4 h-4 mr-1" /> Back to Enrollments
         </Link>

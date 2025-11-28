@@ -16,7 +16,7 @@ const RevenueSummaryCard: FC<RevenueSummaryCardProps> = ({
   const isPositive = parseFloat(change) > 0;
 
   return (
-    <div className="flex items-center justify-between p-5 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-brand-950">
+    <div className="flex items-center justify-between p-5 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-brand-500">
       <div className="flex items-center gap-4">
         <div
           className={`p-3 rounded-full ${
@@ -34,7 +34,7 @@ const RevenueSummaryCard: FC<RevenueSummaryCardProps> = ({
       </div>
       <span
         className={`text-sm font-medium ${
-          isPositive ? "text-brand-950" : "text-red-500"
+          isPositive ? "text-brand-500" : "text-red-500"
         }`}
       >
         {change}

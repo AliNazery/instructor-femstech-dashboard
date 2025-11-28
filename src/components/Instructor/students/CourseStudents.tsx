@@ -28,7 +28,7 @@ export default function CourseStudents({ courseId }: Readonly<Props>) {
         </h2>
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-brand-950 dark:border-gray-700 shadow-sm">
+      <div className="overflow-x-auto rounded-xl border border-brand-500 dark:border-gray-700 shadow-sm">
         <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
           <thead className="bg-gray-50 dark:bg-gray-800/60">
             <tr>

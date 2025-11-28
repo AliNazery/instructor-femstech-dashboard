@@ -37,7 +37,7 @@ const RadioSm: React.FC<RadioProps> = ({
         <span
           className={`mr-2 flex h-4 w-4 items-center justify-center rounded-full border ${
             checked
-              ? "border-brand-950 bg-brand-500"
+              ? "border-brand-500 bg-brand-500"
               : "bg-transparent border-gray-300 dark:border-gray-700"
           }`}
         >

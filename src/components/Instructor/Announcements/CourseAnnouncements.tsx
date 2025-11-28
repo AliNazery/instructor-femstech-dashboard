@@ -27,17 +27,17 @@ export default function CourseAnnouncements({
   const limited = announcements.slice(0, limit);
 
   return (
-    <section className="space-y-4 border border-brand-950 rounded-xl p-4 shadow-xl">
+    <section className="space-y-4 border border-brand-500 rounded-xl p-4 shadow-xl">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold text-gray-900 dark:text-white flex items-center gap-2">
-          <Megaphone size={20} className="text-brand-950" />
+          <Megaphone size={20} className="text-brand-500" />
           Announcements
         </h2>
 
         {onManage && (
           <button
             onClick={onManage}
-            className="text-sm text-brand-950 font-medium hover:underline flex items-center gap-1"
+            className="text-sm text-brand-500 font-medium hover:underline flex items-center gap-1"
           >
             Manage <ArrowRight size={14} />
           </button>

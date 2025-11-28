@@ -89,7 +89,7 @@ export default function QuizQuestionsPage() {
             {/* Question Header */}
             <div className="flex justify-between items-start mb-3">
               <div className="flex gap-3 items-center">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-100 text-brand-800 font-semibold text-sm">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-100 text-brand-500 font-semibold text-sm">
                   {index + 1}
                 </div>
                 <p className="font-medium text-gray-800 dark:text-gray-100 text-base">
@@ -98,7 +98,7 @@ export default function QuizQuestionsPage() {
               </div>
               <div className="flex gap-2">
                 <button
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-lg border border-brand-950 text-brand-950 hover:bg-brand-50 transition"
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs rounded-lg border border-brand-500 text-brand-500 hover:bg-brand-50 transition"
                   onClick={() => handleEdit(q)}
                 >
                   <Pencil size={14} /> Edit
@@ -157,7 +157,7 @@ export default function QuizQuestionsPage() {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-brand-950 px-4 py-2 text-white rounded-lg hover:bg-brand-800 transition"
+            className="flex items-center justify-center sm:justify-start w-full sm:w-auto gap-2 bg-brand-500 px-4 py-2 text-white rounded-lg hover:bg-brand-500 transition"
           >
             ← Go Back
           </button>
@@ -170,7 +170,7 @@ export default function QuizQuestionsPage() {
           </h2>
           <button
             onClick={() => setIsCreateOpen(true)}
-            className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-brand-950 hover:bg-brand-700 rounded-lg transition"
+            className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-brand-500 hover:bg-brand-700 rounded-lg transition"
           >
             <PlusCircle size={16} />
             Add

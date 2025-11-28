@@ -85,7 +85,7 @@ export default function CourseCategories() {
                 action={
                   <button
                     onClick={() => setIsCreateOpen(true)}
-                    className="px-4 py-2 bg-brand-950 text-white rounded hover:bg-brand-700"
+                    className="px-4 py-2 bg-brand-500 text-white rounded hover:bg-brand-700"
                   >
                     Create
                   </button>

@@ -84,7 +84,7 @@ export default function AssignmentSubmissionsPage() {
                         { state: { submission: item } }
                       )
                     }
-                    className="px-4 py-2 text-xs font-medium text-white bg-brand-950 rounded hover:bg-brand-700 transition"
+                    className="px-4 py-2 text-xs font-medium text-white bg-brand-500 rounded hover:bg-brand-700 transition"
                   >
                     Details
                   </button>
@@ -121,7 +121,7 @@ export default function AssignmentSubmissionsPage() {
                       { state: { submission: item } }
                     )
                   }
-                  className="w-full px-4 py-2 text-sm font-medium text-white bg-brand-950 rounded hover:bg-brand-700 transition"
+                  className="w-full px-4 py-2 text-sm font-medium text-white bg-brand-500 rounded hover:bg-brand-700 transition"
                 >
                   Details
                 </button>
@@ -141,7 +141,7 @@ export default function AssignmentSubmissionsPage() {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 justify-center bg-brand-950 px-4 py-2 text-white rounded-xl"
+            className="flex items-center gap-2 justify-center bg-brand-500 px-4 py-2 text-white rounded-xl"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back

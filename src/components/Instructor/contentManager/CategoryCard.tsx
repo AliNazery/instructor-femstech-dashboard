@@ -24,7 +24,7 @@ export function CategoryCard({
   return (
     <motion.div
       onClick={onClick}
-      className="group cursor-pointer bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col border border-brand-950 h-[320px]"
+      className="group cursor-pointer bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col border border-brand-500 h-[320px]"
       whileHover={{ scale: 1.03, boxShadow: "0 12px 30px rgba(0,0,0,0.1)" }}
       whileTap={{ scale: 0.98 }}
       initial={{ opacity: 0, y: 40 }}
@@ -48,7 +48,7 @@ export function CategoryCard({
 
       {/* Body */}
       <div className="flex-1 flex flex-col p-4">
-        <h3 className="text-base font-semibold text-gray-800 group-hover:text-brand-950 line-clamp-2">
+        <h3 className="text-base font-semibold text-gray-800 group-hover:text-brand-500 line-clamp-2">
           {category.title}
         </h3>
         <p className="mt-2 text-xs text-gray-500 flex-1">

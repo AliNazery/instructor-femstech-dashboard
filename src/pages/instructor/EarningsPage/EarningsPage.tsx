@@ -85,7 +85,7 @@ const EarningsPage: FC = () => {
             placeholder="Search by course or student..."
             value={filter}
             onChange={handleFilterChange}
-            className="w-full sm:w-64 px-3 py-2 border border-gray-300 dark:border-neutral-700 rounded-md text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-950 focus:border-brand-950 transition-colors duration-150"
+            className="w-full sm:w-64 px-3 py-2 border border-gray-300 dark:border-neutral-700 rounded-md text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors duration-150"
           />
         </div>
    

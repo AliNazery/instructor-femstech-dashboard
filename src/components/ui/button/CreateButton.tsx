@@ -17,7 +17,7 @@ const CreateButton: FC<CreateButtonProps> = ({
       onClick={onClick}
       className={`
     inline-flex items-center justify-center gap-3 px-5 py-2 rounded-lg 
-    bg-brand-950 text-white font-semibold shadow-lg
+    bg-brand-500 text-white font-semibold shadow-lg
     hover:bg-brand-700 hover:shadow-xl
     active:scale-95 active:brightness-90
     transition duration-300 ease-in-out

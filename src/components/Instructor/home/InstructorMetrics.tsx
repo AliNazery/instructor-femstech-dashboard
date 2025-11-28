@@ -7,8 +7,8 @@ export default function InstructorMetrics() {
 
   if (isLoading)
     return (
-      <div className="flex items-center justify-center p-6 border border-brand-950 rounded-2xl bg-white dark:bg-white/[0.03] h-[120px]">
-        <Loader2 className="animate-spin w-6 h-6 text-brand-950 dark:text-brand-400" />
+      <div className="flex items-center justify-center p-6 border border-brand-500 rounded-2xl bg-white dark:bg-white/[0.03] h-[120px]">
+        <Loader2 className="animate-spin w-6 h-6 text-brand-500 dark:text-brand-400" />
         <span className="ml-2 text-sm text-gray-500 dark:text-gray-400">
           Loading metrics...
         </span>
@@ -37,7 +37,7 @@ export default function InstructorMetrics() {
 
   const metrics = [
     {
-      icon: <GroupIcon className="text-brand-950 size-6 dark:text-white/90" />,
+      icon: <GroupIcon className="text-brand-500 size-6 dark:text-white/90" />,
       title: "Students",
       value: stats?.total_students ?? 0,
       change: 7.5,
@@ -45,7 +45,7 @@ export default function InstructorMetrics() {
     },
     {
       icon: (
-        <BoxIconLine className="text-brand-950 size-6 dark:text-white/90" />
+        <BoxIconLine className="text-brand-500 size-6 dark:text-white/90" />
       ),
       title: "Courses",
       value: stats?.total ?? 0,
@@ -53,7 +53,7 @@ export default function InstructorMetrics() {
       color: "success",
     },
     {
-      icon: <DollarSign className="text-brand-950 size-6 dark:text-white/90" />,
+      icon: <DollarSign className="text-brand-500 size-6 dark:text-white/90" />,
       title: "Revenue",
       value: `$${Number(stats?.total_revenue ?? 0).toFixed(2)}`,
       change: 12.1,
@@ -66,7 +66,7 @@ export default function InstructorMetrics() {
       {metrics.map((metric, i) => (
         <div
           key={i}
-          className="rounded-2xl border border-brand-950 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6 transition-all hover:shadow-lg hover:-translate-y-1"
+          className="rounded-2xl border border-brand-500 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6 transition-all hover:shadow-lg hover:-translate-y-1"
         >
           <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-xl dark:bg-gray-800 sm:mx-auto md:mx-0">
             {metric.icon}

@@ -28,7 +28,7 @@ const CourseModules: FC<CourseModulesProps> = ({
       flex items-center justify-center flex-wrap gap-1 sm:gap-2 
       px-2.5 py-1 w-full sm:w-auto
       text-xs sm:text-sm font-medium 
-      text-white bg-brand-950 rounded-lg 
+      text-white bg-brand-500 rounded-lg 
       hover:bg-brand-700 transition
       sm:self-end
     "

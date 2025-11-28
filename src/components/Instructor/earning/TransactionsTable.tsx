@@ -67,7 +67,7 @@ const TransactionsTable: FC<TransactionsTableProps> = ({
           <div
             key={t.id}
             onClick={() => onRowClick?.(t.id)}
-            className="p-4 flex flex-col gap-2 hover:bg-gray-50 cursor-pointer transition-colors duration-150 border-b-brand-950 "
+            className="p-4 flex flex-col gap-2 hover:bg-gray-50 cursor-pointer transition-colors duration-150 border-b-brand-500 "
           >
             <div className="flex justify-between items-center">
               <span className="text-xs text-gray-400">ID: {t.id}</span>
@@ -81,7 +81,7 @@ const TransactionsTable: FC<TransactionsTableProps> = ({
 
             <div className="mt-1">
               <span className="text-sm text-gray-700">Amount: </span>
-              <span className="font-semibold text-brand-950">{t.amount}</span>
+              <span className="font-semibold text-brand-500">{t.amount}</span>
             </div>
           </div>
         ))}

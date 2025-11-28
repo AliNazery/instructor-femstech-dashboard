@@ -19,7 +19,7 @@ const PinToggle: FC<Props> = ({ pinned, onToggle, priority = "normal" }) => {
   };
 
   const getColorClasses = () => {
-    if (pinned) return "text-brand-950 ring-1 hover:text-brand-700";
+    if (pinned) return "text-brand-500 ring-1 hover:text-brand-700";
     return "text-gray-400 bg-gray-100 hover:text-gray-600";
   };
 

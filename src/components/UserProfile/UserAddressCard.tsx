@@ -4,7 +4,7 @@ import { RootState } from "../../app/api/store";
 export default function UserAddressCard() {
   const { instructor } = useSelector((state: RootState) => state.instructor);
   return (
-    <div className="p-5 border border-brand-950 rounded-2xl dark:border-gray-800 lg:p-6">
+    <div className="p-5 border border-brand-500 rounded-2xl dark:border-gray-800 lg:p-6">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
         <div>
           <h4 className="text-lg font-semibold text-gray-800 dark:text-white/90 lg:mb-6">

@@ -70,7 +70,7 @@ export default function AnnouncementsDetail() {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 justify-center bg-brand-950 px-4 py-2 text-white rounded-xl"
+            className="flex items-center gap-2 justify-center bg-brand-500 px-4 py-2 text-white rounded-xl"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back
@@ -81,7 +81,7 @@ export default function AnnouncementsDetail() {
         <div className="flex items-center justify-end mb-6">
           <button
             onClick={() => setIsCreateOpen(true)}
-            className="flex items-center justify-center gap-2 bg-brand-950 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition"
+            className="flex items-center justify-center gap-2 bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition"
           >
             <Plus size={18} /> Add
           </button>

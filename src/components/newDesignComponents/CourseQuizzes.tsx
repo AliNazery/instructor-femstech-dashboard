@@ -31,7 +31,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
   const displayQuizzes = limit ? quizzes.slice(0, limit) : quizzes;
 
   return (
-    <section className="bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-brand-950 dark:border-neutral-800 p-4">
+    <section className="bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-brand-500 dark:border-neutral-800 p-4">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
         {header ?? (
@@ -44,7 +44,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
           {onViewAll && (
             <button
               onClick={onViewAll}
-              className="flex items-center gap-1.5 text-sm font-medium text-brand-950 hover:text-brand-700 transition"
+              className="flex items-center gap-1.5 text-sm font-medium text-brand-500 hover:text-brand-700 transition"
             >
               <Eye size={16} /> View All
             </button>
@@ -52,7 +52,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
           {onAddQuiz && (
             <button
               onClick={onAddQuiz}
-              className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition"
+              className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition"
             >
               <PlusCircle size={16} /> Add Quiz
             </button>
@@ -83,7 +83,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
               {(onEditQuiz || onDeleteQuiz) && (
                 <div className="flex flex-wrap gap-2 justify-center sm:justify-start mt-2 sm:mt-0 w-full sm:w-auto">
                   <button
-                    className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
+                    className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
                     onClick={() =>
                       navigate(
                         `/instructor/course/content/quizzes/${quiz.id}/questions`
@@ -95,7 +95,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
                   </button>
 
                   <button
-                    className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
+                    className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
                     onClick={() =>
                       navigate(
                         `/instructor/course/content/quizzes/${quiz.id}/answers`
@@ -108,7 +108,7 @@ const CourseQuizzes: FC<CourseQuizzesProps> = ({
 
                   {onEditQuiz && (
                     <button
-                      className="flex-1 sm:flex-none px-3 py-1.5 text-xs sm:text-sm text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
+                      className="flex-1 sm:flex-none px-3 py-1.5 text-xs sm:text-sm text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition whitespace-nowrap"
                       onClick={() => onEditQuiz(quiz.id)}
                     >
                       Edit

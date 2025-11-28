@@ -98,7 +98,7 @@ export default function NotificationDropdown() {
               <button
                 onClick={handleMarkAllRead}
                 disabled={marking}
-                className="flex items-center gap-1 text-xs font-medium text-brand-950 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300 transition"
+                className="flex items-center gap-1 text-xs font-medium text-brand-500 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300 transition"
               >
                 <CheckCheck size={14} />
                 {marking ? "Marking..." : "Mark all read"}
@@ -158,7 +158,7 @@ export default function NotificationDropdown() {
               navigate("/instructor/notifications");
               setIsDesktopOpen(false);
             }}
-            className="w-full py-2 text-center text-sm font-medium text-brand-950 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300"
+            className="w-full py-2 text-center text-sm font-medium text-brand-500 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300"
           >
             View all notifications →
           </button>
@@ -227,7 +227,7 @@ export default function NotificationDropdown() {
               onClick={() =>
                 closeAfter(() => navigate("/instructor/notifications"))
               }
-              className="w-full py-2 text-center text-sm font-medium text-brand-950 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300"
+              className="w-full py-2 text-center text-sm font-medium text-brand-500 hover:text-brand-700 dark:text-blue-400 dark:hover:text-blue-300"
             >
               View all notifications →
             </button>

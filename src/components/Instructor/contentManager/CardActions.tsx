@@ -15,7 +15,7 @@ export function CardActions({ onEdit, onDelete, onQuiz }: Readonly<CardActionsPr
             e.stopPropagation();
             onEdit();
           }}
-          className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 border border-brand-950 hover:bg-brand-700 p-2 rounded-2xl"
+          className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 border border-brand-500 hover:bg-brand-700 p-2 rounded-2xl"
         >
           <Pencil className="w-4 h-4" /> Edit
         </button>
@@ -27,7 +27,7 @@ export function CardActions({ onEdit, onDelete, onQuiz }: Readonly<CardActionsPr
             e.stopPropagation();
             onQuiz();
           }}
-          className="flex items-center gap-1 text-sm text-gray-700 border border-brand-950 hover:bg-brand-700 p-2 rounded-2xl"
+          className="flex items-center gap-1 text-sm text-gray-700 border border-brand-500 hover:bg-brand-700 p-2 rounded-2xl"
         >
           <HelpCircle className="w-4 h-4" /> Quiz
         </button>
@@ -38,7 +38,7 @@ export function CardActions({ onEdit, onDelete, onQuiz }: Readonly<CardActionsPr
             e.stopPropagation();
             onDelete();
           }}
-          className="flex items-center gap-1 text-sm text-gray-700 border border-brand-950 hover:bg-brand-700 p-2 rounded-2xl"
+          className="flex items-center gap-1 text-sm text-gray-700 border border-brand-500 hover:bg-brand-700 p-2 rounded-2xl"
         >
           <Trash2 className="w-4 h-4" /> Delete
         </button>

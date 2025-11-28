@@ -48,7 +48,7 @@ export default function PopularCoursesPage() {
 
               <div className="flex justify-between items-center text-sm">
                 <span className="flex items-center gap-1 font-medium text-gray-700 dark:text-gray-300">
-                  <Users className="w-4 h-4 text-brand-950" />
+                  <Users className="w-4 h-4 text-brand-500" />
                   {course.total_students} Students
                 </span>
                 <span className="font-semibold text-green-600">

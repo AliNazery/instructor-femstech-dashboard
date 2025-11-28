@@ -48,7 +48,7 @@ const QuizAnswersPage = () => {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 justify-center bg-brand-950 px-4 py-2 text-white rounded-xl"
+            className="flex items-center gap-2 justify-center bg-brand-500 px-4 py-2 text-white rounded-xl"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back

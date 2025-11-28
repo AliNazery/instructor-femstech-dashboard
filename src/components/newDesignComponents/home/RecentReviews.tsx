@@ -25,7 +25,7 @@ export default function RecentReviews() {
 
   if (isLoading) {
     return (
-      <div className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+      <div className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Loading reviews...
         </p>
@@ -66,14 +66,14 @@ export default function RecentReviews() {
   const reviews = (data?.data ?? []).slice(0, 3);
 
   return (
-    <div className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+    <div className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
           Recent Reviews
         </h3>
         <Link
           to="/instructor/reviews"
-          className="text-xs text-brand-950 dark:text-brand-400 hover:underline"
+          className="text-xs text-brand-500 dark:text-brand-400 hover:underline"
         >
           View All
         </Link>
@@ -88,7 +88,7 @@ export default function RecentReviews() {
           {reviews.map((rv) => (
             <li
               key={rv.id}
-              className="group rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl hover:border-brand-200 dark:hover:border-brand-950/30"
+              className="group rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl hover:border-brand-200 dark:hover:border-brand-500/30"
             >
               <div className="flex items-start justify-between mb-1">
                 <div className="flex items-center gap-2 flex-wrap">
@@ -147,7 +147,7 @@ export default function RecentReviews() {
 //   const { data, isLoading, isError, refetch } = useGetRecentReviewsQuery();
 //   if (isLoading) {
 //     return (
-//       <div className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+//       <div className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
 //         <p className="text-sm text-gray-500 dark:text-gray-400">
 //           Loading reviews...
 //         </p>
@@ -188,12 +188,12 @@ export default function RecentReviews() {
 //   const reviews = data?.data ?? [];
 
 //   return (
-//     <div className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
+//     <div className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 p-5 shadow-sm dark:from-white/[0.03] dark:to-gray-900/30 dark:border-gray-800 transition">
 //       <div className="flex items-center justify-between mb-4">
 //         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
 //           Recent Reviews
 //         </h3>
-//         <button className="text-xs text-brand-950 dark:text-brand-400 hover:underline">
+//         <button className="text-xs text-brand-500 dark:text-brand-400 hover:underline">
 //           View All
 //         </button>
 //       </div>
@@ -207,7 +207,7 @@ export default function RecentReviews() {
 //           {reviews.map((rv) => (
 //             <li
 //               key={rv.id}
-//               className="group rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl hover:border-brand-200 dark:hover:border-brand-950/30"
+//               className="group rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl hover:border-brand-200 dark:hover:border-brand-500/30"
 //             >
 //               <div className="flex items-start justify-between mb-1">
 //                 <div className="flex items-center gap-2 flex-wrap">

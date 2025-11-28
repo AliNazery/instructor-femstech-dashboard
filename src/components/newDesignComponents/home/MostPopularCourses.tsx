@@ -32,14 +32,14 @@ export default function MostPopularCourses() {
   const courses = data.data.slice(0, 4);
 
   return (
-    <section className="w-full overflow-hidden rounded-2xl border border-brand-950 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-lg transition-all">
+    <section className="w-full overflow-hidden rounded-2xl border border-brand-500 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-lg transition-all">
       <header className="p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 dark:border-gray-800">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white/90">
           Most Popular Courses
         </h3>
         <Link
           to="/instructor/popular-courses"
-          className="text-sm font-medium text-brand-950 hover:underline"
+          className="text-sm font-medium text-brand-500 hover:underline"
         >
           View All →
         </Link>

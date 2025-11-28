@@ -16,7 +16,7 @@ export function CardActions({ onView, onEdit, onDelete }: Readonly<CardActionsPr
             onView();
           }}
           className="flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-md 
-                     bg-brand-50 text-brand-950 hover:bg-brand-100 transition"
+                     bg-brand-50 text-brand-500 hover:bg-brand-100 transition"
         >
           <Eye className="w-4 h-4" /> View
         </button>

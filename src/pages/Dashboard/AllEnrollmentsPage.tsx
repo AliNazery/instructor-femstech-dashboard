@@ -33,7 +33,7 @@ export default function AllEnrollmentsPage() {
         </h2>
         <Link
           to="/instructor/home"
-          className="text-sm text-brand-950 hover:underline"
+          className="text-sm text-brand-500 hover:underline"
         >
           ←  Dashboard
         </Link>
@@ -43,7 +43,7 @@ export default function AllEnrollmentsPage() {
         {enrollments.map((en) => (
           <div
             key={en.id}
-            className="rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 flex flex-col sm:flex-row sm:items-center gap-4 hover:shadow-lg transition"
+            className="rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-4 flex flex-col sm:flex-row sm:items-center gap-4 hover:shadow-lg transition"
           >
             {en.student?.avatar_url && (
               <img

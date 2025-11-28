@@ -30,7 +30,7 @@ const PageLayoutSection: FC<PageLayoutSectionProps> = ({
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div className="flex flex-col  md:flex-row md:items-center md:justify-between gap-4 md:gap-0 border-b border-brand-950 dark:border-brand-700 pb-4">
+      <div className="flex flex-col  md:flex-row md:items-center md:justify-between gap-4 md:gap-0 border-b border-brand-500 dark:border-brand-700 pb-4">
         <div>
           <h2 className="text-3xl font-semibold text-brand-black dark:text-gray-100 tracking-tight">
             {title}
@@ -82,7 +82,7 @@ const PageLayoutSection: FC<PageLayoutSectionProps> = ({
         </div>
       )}
       {/* Content container */}
-      <div className="rounded-xl border border-brand-950 dark:border-brand-800 bg-white dark:bg-gray-900 shadow-md p-4 transition-all duration-300">
+      <div className="rounded-xl border border-brand-500 dark:border-brand-500 bg-white dark:bg-gray-900 shadow-md p-4 transition-all duration-300">
         {children}
       </div>
     </div>

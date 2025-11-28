@@ -144,7 +144,7 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
                   {isOpen ? (
                     <FolderOpen
                       size={18}
-                      className="text-brand-950 dark:text-brand-400 flex-shrink-0"
+                      className="text-brand-500 dark:text-brand-400 flex-shrink-0"
                     />
                   ) : (
                     <Folder size={18} className="text-gray-400 flex-shrink-0" />
@@ -154,7 +154,7 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
       sm:whitespace-normal sm:break-words sm:overflow-visible
       transition-colors ${
         isOpen
-          ? "text-brand-950 dark:text-brand-400"
+          ? "text-brand-500 dark:text-brand-400"
           : "text-gray-800 dark:text-gray-100"
       }`}
                   >
@@ -167,7 +167,7 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
               <div className="flex flex-wrap gap-2 sm:gap-3 justify-end w-full sm:w-auto">
                 <button
                   onClick={() => handleEdit(mod)}
-                  className="flex items-center gap-1.5 text-sm text-brand-950 
+                  className="flex items-center gap-1.5 text-sm text-brand-500 
                              hover:text-brand-700 dark:hover:text-brand-300 
                              transition-colors duration-150"
                 >

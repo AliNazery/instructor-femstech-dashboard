@@ -8,7 +8,7 @@ export default function RecentEnrollments() {
   // 🔹 Loading state
   if (isLoading) {
     return (
-      <div className="rounded-2xl border border-brand-950 bg-white dark:bg-gray-900/30 p-5">
+      <div className="rounded-2xl border border-brand-500 bg-white dark:bg-gray-900/30 p-5">
         <p className="text-sm text-gray-500 dark:text-gray-400 animate-pulse">
           Loading recent enrollments...
         </p>
@@ -51,7 +51,7 @@ export default function RecentEnrollments() {
   const limitedEnrollments = enrollments.slice(0, 4);
 
   return (
-    <section className="rounded-2xl border border-brand-950 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900/30 dark:border-gray-800 shadow-sm transition-all">
+    <section className="rounded-2xl border border-brand-500 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900/30 dark:border-gray-800 shadow-sm transition-all">
       {/* Header */}
       <header className="p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 dark:border-gray-800">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white/90">
@@ -60,7 +60,7 @@ export default function RecentEnrollments() {
         {enrollments.length > 4 && (
           <Link
             to="/instructor/all-enrollments"
-            className="text-sm font-medium text-brand-950 dark:text-brand-400 hover:underline"
+            className="text-sm font-medium text-brand-500 dark:text-brand-400 hover:underline"
           >
             View All →
           </Link>
@@ -82,7 +82,7 @@ export default function RecentEnrollments() {
               {/* Left section: student & course info */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full md:flex-1">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-brand-50 dark:bg-brand-900/30 shrink-0">
-                  <UserPlus className="w-5 h-5 text-brand-950 dark:text-brand-400" />
+                  <UserPlus className="w-5 h-5 text-brand-500 dark:text-brand-400" />
                 </div>
 
                 <div className="flex flex-col min-w-0">

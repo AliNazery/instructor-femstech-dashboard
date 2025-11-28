@@ -44,7 +44,7 @@ export default function AssignmentSubmissionDetail() {
         action={
           <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 justify-center bg-brand-950 px-4 py-2 text-white rounded-xl"
+            className="flex items-center gap-2 justify-center bg-brand-500 px-4 py-2 text-white rounded-xl"
           >
             <ArrowLeft className="w-4 h-4" />
             Go Back
@@ -114,7 +114,7 @@ function InfoCard({
       className={`p-5 rounded-2xl border dark:border-neutral-700 shadow-sm transition
       ${
         highlight
-          ? "bg-brand-50 dark:bg-brand-950/30"
+          ? "bg-brand-50 dark:bg-brand-500/30"
           : "bg-gray-50 dark:bg-neutral-800/40"
       }`}
     >

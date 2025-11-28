@@ -12,7 +12,7 @@ export function TabButton({
       onClick={onClick}
       className={`px-4 py-2 rounded-md text-sm font-medium transition ${
         active
-          ? "bg-brand-950 text-white shadow-sm"
+          ? "bg-brand-500 text-white shadow-sm"
           : "text-gray-700 hover:bg-white"
       }`}
     >

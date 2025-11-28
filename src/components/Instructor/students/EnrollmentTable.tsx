@@ -23,7 +23,7 @@ export default function EnrollmentTable({
     return <div className="text-center py-6">No enrollments found.</div>;
 
   return (
-    <div className="bg-white rounded-md shadow-sm border border-brand-950 p-2">
+    <div className="bg-white rounded-md shadow-sm border border-brand-500 p-2">
       {/* 🖥️ Table view — shown on sm and larger */}
       <div className="overflow-x-auto hidden sm:block">
         <table className="min-w-full divide-y divide-gray-200 text-sm">
@@ -60,7 +60,7 @@ export default function EnrollmentTable({
                   <td className="px-4 py-2">
                     <button
                       onClick={() => onViewStudentDetails(enrollment.student)}
-                      className="text-brand-950 hover:underline"
+                      className="text-brand-500 hover:underline"
                     >
                       View Details
                     </button>
@@ -120,7 +120,7 @@ export default function EnrollmentTable({
               <div className="mt-4 flex justify-end">
                 <button
                   onClick={() => onViewStudentDetails(enrollment.student)}
-                  className="text-brand-950 text-sm font-medium hover:underline"
+                  className="text-brand-500 text-sm font-medium hover:underline"
                 >
                   View Details
                 </button>

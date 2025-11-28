@@ -31,7 +31,7 @@ const CourseAssignments: FC<CourseAssignmentsProps> = ({
   const displayAssignments = limit ? assignments.slice(0, limit) : assignments;
 
   return (
-    <section className="bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-brand-950 dark:border-neutral-800 p-4">
+    <section className="bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-brand-500 dark:border-neutral-800 p-4">
       {/* Header */}
       <div className="flex justify-between items-center mb-3">
         {header ?? (
@@ -42,7 +42,7 @@ const CourseAssignments: FC<CourseAssignmentsProps> = ({
         <div className="flex gap-2">
           {onViewAll && (
             <button
-              className="flex items-center gap-1.5 text-sm font-medium text-brand-950 hover:text-brand-700 transition"
+              className="flex items-center gap-1.5 text-sm font-medium text-brand-500 hover:text-brand-700 transition"
               onClick={onViewAll}
             >
               <Eye size={16} /> View All
@@ -50,7 +50,7 @@ const CourseAssignments: FC<CourseAssignmentsProps> = ({
           )}
           {onAddAssignment && (
             <button
-              className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition"
+              className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition"
               onClick={onAddAssignment}
             >
               <PlusCircle size={16} /> Add
@@ -81,7 +81,7 @@ const CourseAssignments: FC<CourseAssignmentsProps> = ({
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto mt-6">
                 <button
-                  className="flex items-center justify-center gap-1 px-3 py-1 text-xs text-white bg-brand-950 rounded hover:bg-brand-700 w-full sm:w-auto"
+                  className="flex items-center justify-center gap-1 px-3 py-1 text-xs text-white bg-brand-500 rounded hover:bg-brand-700 w-full sm:w-auto"
                   onClick={() =>
                     navigate(
                       `/instructor/course/content/assignment/${assignment.id}/submissions`
@@ -93,7 +93,7 @@ const CourseAssignments: FC<CourseAssignmentsProps> = ({
 
                 {onEditAssignment && (
                   <button
-                    className="px-4 py-2 text-xs text-white bg-brand-950 rounded hover:bg-brand-700 w-full sm:w-auto"
+                    className="px-4 py-2 text-xs text-white bg-brand-500 rounded hover:bg-brand-700 w-full sm:w-auto"
                     onClick={() => onEditAssignment(assignment.id)}
                   >
                     Edit

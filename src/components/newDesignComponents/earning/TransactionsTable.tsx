@@ -85,7 +85,7 @@ const TransactionsTable: FC<TransactionsTableProps> = ({
                 <span className="text-sm text-gray-700 dark:text-gray-300">
                   Amount:{" "}
                 </span>
-                <span className="font-semibold text-brand-950 dark:text-green-400">
+                <span className="font-semibold text-brand-500 dark:text-green-400">
                   {t.amount}
                 </span>
               </div>

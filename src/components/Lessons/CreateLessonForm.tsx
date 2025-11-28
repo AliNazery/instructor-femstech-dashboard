@@ -97,7 +97,7 @@ const CreateLessonForm: FC<CreateLessonFormProps> = ({ onSuccess, moduleId }) =>
 
       <button
         type="submit"
-        className="bg-brand-950 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
+        className="bg-brand-500 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
         disabled={isLoading}
       >
         {isLoading ? "Creating..." : "Create"}

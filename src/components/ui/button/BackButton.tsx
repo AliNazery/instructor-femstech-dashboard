@@ -13,8 +13,8 @@ const BackButton: React.FC<BackButtonProps> = ({ label = "Go Back", className = 
       onClick={() => navigate(-1)}
       className={`
         flex items-center justify-center sm:justify-start gap-2 
-        bg-brand-950 text-white rounded-lg transition-colors 
-        hover:bg-brand-800 
+        bg-brand-500 text-white rounded-lg transition-colors 
+        hover:bg-brand-500 
         text-xs sm:text-sm md:text-base 
         px-3 sm:px-4 py-2 w-full sm:w-auto 
         ${className}

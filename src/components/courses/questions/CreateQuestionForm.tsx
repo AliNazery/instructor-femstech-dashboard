@@ -165,14 +165,14 @@ const CreateQuestionForm: FC<CreateQuestionFormProps> = ({
       <button
         type="button"
         onClick={handleAddOption}
-        className="self-start bg-brand-950 px-3 py-1 rounded text-sm hover:bg-brand-700"
+        className="self-start bg-brand-500 px-3 py-1 rounded text-sm hover:bg-brand-700"
       >
         + Add Option
       </button>
 
       <button
         type="submit"
-        className="bg-brand-950 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
+        className="bg-brand-500 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-50"
         disabled={isLoading}
       >
         {isLoading ? "Creating..." : "Create Question"}

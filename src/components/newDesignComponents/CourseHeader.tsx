@@ -68,7 +68,7 @@ const CourseHeader: FC<CourseHeaderProps> = ({
             w-full sm:w-full md:w-auto lg:w-auto
             px-3 py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5
             text-sm sm:text-base md:text-sm lg:text-base
-            bg-brand-950 text-white hover:bg-brand-800 dark:focus:ring-brand-400
+            bg-brand-500 text-white hover:bg-brand-500 dark:focus:ring-brand-400
           `}
           aria-label="Edit Course"
         >

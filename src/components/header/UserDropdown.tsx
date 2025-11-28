@@ -7,23 +7,22 @@ import { useDispatch, useSelector } from "react-redux";
 import Cookies from "js-cookie";
 import { resetInstructor } from "../../app/features/instructorSlice";
 import { RootState } from "../../app/api/store";
-import avatar from "../../../public/images/user/avatar.jpg"
+import avatar from "../../../public/images/user/avatar.jpg";
+import { Link } from "react-router-dom";
 
 export default function UserDropdown() {
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const [logout] = useInstructorLogoutMutation();
   const { instructor } = useSelector((state: RootState) => state.instructor);
 
-
-  
   const handleLogout = async () => {
     try {
       await logout().unwrap();
       Cookies.remove("instructor_token");
-   dispatch(resetInstructor());
+      dispatch(resetInstructor());
       navigate("/");
     } catch (err) {
       console.error("Logout failed", err);
@@ -38,7 +37,6 @@ export default function UserDropdown() {
   }
   const avatarScr = instructor?.avatar_url || avatar;
 
-  
   return (
     <div className="relative">
       <button
@@ -49,7 +47,7 @@ export default function UserDropdown() {
           <img src={avatarScr} alt="Instructor" />
         </span>
 
-        <span className="block mr-1 font-medium text-theme-sm">
+        <span className="hidden md:block mr-1 font-medium text-theme-sm">
           {instructor?.first_name}
         </span>
         <svg
@@ -79,14 +77,25 @@ export default function UserDropdown() {
       >
         <div>
           <span className="block font-medium text-gray-700 text-theme-sm dark:text-gray-400">
-          {instructor?.first_name}
+            {instructor?.first_name}
           </span>
           <span className="mt-0.5 block text-theme-xs text-gray-500 dark:text-gray-400">
-           {instructor?.email}
+            {instructor?.email}
           </span>
         </div>
 
-        <ul className="flex flex-col gap-1 pt-4 pb-3 border-b border-gray-200 dark:border-gray-800"></ul>
+        <ul className="flex flex-col gap-1 pt-4 pb-3 border-b border-gray-200 dark:border-gray-800">
+          {/* Added Profile link here */}
+          <li>
+            <Link
+              to="/instructor/profile"
+              onClick={closeDropdown}
+              className="block px-3 py-2 text-theme-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/5"
+            >
+              Profile
+            </Link>
+          </li>
+        </ul>
         <button
           onClick={handleLogout}
           className="flex items-center gap-3 px-3 py-2 mt-3 font-medium text-gray-700 rounded-lg group text-theme-sm hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"

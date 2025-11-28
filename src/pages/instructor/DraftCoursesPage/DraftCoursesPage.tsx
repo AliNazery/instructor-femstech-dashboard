@@ -53,7 +53,7 @@ export default function DraftCoursesPage() {
                 className="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span className="flex items-center gap-2 text-white font-medium bg-brand-950/80 px-3 py-1 rounded-lg">
+                <span className="flex items-center gap-2 text-white font-medium bg-brand-500/80 px-3 py-1 rounded-lg">
                   <Eye size={16} /> Edit Draft
                 </span>
               </div>
@@ -129,7 +129,7 @@ export default function DraftCoursesPage() {
                   onClick={() =>
                     navigate(`/instructor/course/content/${course.id}/detail`)
                   }
-                  className="w-full flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium bg-brand-950 text-white rounded-md hover:bg-brand-700 transition-all duration-200"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium bg-brand-500 text-white rounded-md hover:bg-brand-700 transition-all duration-200"
                 >
                   <BookOpen size={16} />
                   Manage Course

@@ -51,7 +51,8 @@ export default function SignUpForm() {
   };
 
   return (
-    <div className="py-10 flex flex-col flex-1 w-full overflow-y-auto lg:w-1/2 no-scrollbar">
+    <div className="py-10 w-full flex flex-col gap-6">
+     {/* <div className="py-10 flex flex-col flex-1 w-full overflow-y-auto lg:w-1/2 no-scrollbar"> */}
       <div className="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
         <div>
           <div className="mb-5 sm:mb-8">
@@ -202,7 +203,7 @@ export default function SignUpForm() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-950 shadow-theme-xs hover:bg-brand-700 disabled:opacity-70"
+                className="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-700 disabled:opacity-70"
               >
                 {isLoading ? "Creating Account..." : "Sign Up"}
               </button>
@@ -214,7 +215,7 @@ export default function SignUpForm() {
               Already have an account?{" "}
               <Link
                 to="/"
-                className="text-brand-950 hover:text-brand-700 "
+                className="text-brand-500 hover:text-brand-700 "
               >
                 Sign In
               </Link>

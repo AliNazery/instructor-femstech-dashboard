@@ -18,7 +18,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white dark:bg-gray-800 border border-brand-950 p-6 rounded-lg w-full max-w-xl shadow-xl"
+        className="relative bg-white dark:bg-gray-800 border border-brand-500 p-6 rounded-lg w-full max-w-xl shadow-xl"
         onClick={(e) => e.stopPropagation()} // prevent modal close when clicking inside
       >
         <button

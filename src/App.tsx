@@ -60,7 +60,7 @@ export default function App() {
   if (isLoading) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-70">
-        <div className="h-12 w-12 animate-spin rounded-full border-4 border-brand-950 border-t-transparent" />
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-brand-500 border-t-transparent" />
       </div>
     );
   }
@@ -182,7 +182,6 @@ export default function App() {
             path="/instructor/quiz-answers"
             element={<StudentQuizAnswersPage />}
           />
-          assignment-answers
           <Route
             path="/instructor/assignment-answers"
             element={<StudentAssignmentAnswerPage />}

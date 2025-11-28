@@ -19,7 +19,7 @@ export default function UserMetaCard() {
          !showFullBio && isLongBio ? `${bio.slice(0, 120)}...` : bio;
 
   return (
-    <div className="p-5 border border-brand-950 rounded-2xl dark:border-gray-800 lg:p-6">
+    <div className="p-5 border border-brand-500 rounded-2xl dark:border-gray-800 lg:p-6">
       <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
         <div className="flex flex-col items-center w-full gap-6 xl:flex-row">
           <div className="w-20 h-20 shrink-0 overflow-hidden border border-gray-200 rounded-full dark:border-gray-800">
@@ -35,7 +35,7 @@ export default function UserMetaCard() {
                 {isLongBio && (
                   <button
                     onClick={() => setShowFullBio((prev) => !prev)}
-                    className="ml-1 text-brand-950 hover:underline"
+                    className="ml-1 text-brand-500 hover:underline"
                   >
                     {showFullBio ? "Show less" : "Read more"}
                   </button>

@@ -9,9 +9,9 @@ interface ActionButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<Variant, string> = {
-  edit: "border border-brand-950 hover:bg-brand-300 text-brand-black dark:text-gray-300 dark:hover:text-brand-black",
+  edit: "border border-brand-500 hover:bg-brand-300 text-brand-black dark:text-gray-300 dark:hover:text-brand-black",
   delete: "border border-red-300 text-red-400 hover:bg-red-100",
-  open: "border border-brand-950 text-brand-950 hover:bg-brand-100 dark:text-brand-400 dark:hover:text-brand-800",
+  open: "border border-brand-500 text-brand-500 hover:bg-brand-100 dark:text-brand-400 dark:hover:text-brand-500",
 };
 
 const ActionButton: FC<ActionButtonProps> = ({

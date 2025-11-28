@@ -150,7 +150,7 @@ const AppSidebar: React.FC = () => {
 
       {/* SIDEBAR */}
       <aside
-        className={`fixed top-0 left-0 h-screen bg-brand-950 text-white border-r border-gray-200 flex flex-col px-5 transition-all duration-300 z-50 ${getSidebarWidth()} ${
+        className={`fixed top-0 left-0 h-screen bg-brand-500 text-white border-r border-gray-200 flex flex-col px-5 transition-all duration-300 z-50 ${getSidebarWidth()} ${
           isMobileOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0`}
         onMouseEnter={() => !isExpanded && setIsHovered(true)}
@@ -182,8 +182,8 @@ const AppSidebar: React.FC = () => {
                         onClick={() => toggleSubmenu(index)}
                         className={`flex items-center w-full px-4 py-2 rounded-md text-sm justify-between transition-colors ${
                           isActive(item.path!)
-                            ? "bg-white text-brand-950 font-semibold mb-2"
-                            : "hover:bg-white hover:text-brand-950"
+                            ? "bg-white text-brand-500 font-semibold mb-2"
+                            : "hover:bg-white hover:text-brand-500"
                         } ${
                           !isExpanded && !isHovered
                             ? "lg:justify-center"
@@ -225,8 +225,8 @@ const AppSidebar: React.FC = () => {
                               onClick={handleNavClick}
                               className={`block px-4 py-2 rounded-md text-sm transition-colors ${
                                 isActive(sub.path)
-                                  ? "bg-white text-brand-950 font-semibold"
-                                  : "hover:bg-white hover:text-brand-950"
+                                  ? "bg-white text-brand-500 font-semibold"
+                                  : "hover:bg-white hover:text-brand-500"
                               }`}
                             >
                               {sub.name}
@@ -241,8 +241,8 @@ const AppSidebar: React.FC = () => {
                       onClick={handleNavClick}
                       className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
                         isActive(item.path!)
-                          ? "bg-white text-brand-950 font-semibold"
-                          : "hover:bg-white hover:text-brand-950"
+                          ? "bg-white text-brand-500 font-semibold"
+                          : "hover:bg-white hover:text-brand-500"
                       } ${
                         !isExpanded && !isHovered
                           ? "lg:justify-center"
@@ -266,7 +266,7 @@ const AppSidebar: React.FC = () => {
                   <Link
                     to={item.path!}
                     onClick={handleNavClick}
-                    className="flex items-center gap-2 px-4 py-2 rounded-md text-sm hover:bg-white hover:text-brand-950 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 rounded-md text-sm hover:bg-white hover:text-brand-500 transition-colors"
                   >
                     {item.icon}
                     {(isExpanded || isHovered || isMobileOpen) && item.name}

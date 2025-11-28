@@ -12,8 +12,8 @@ export default function CourseStatusBreakdown() {
 
   if (isLoading)
     return (
-      <div className="rounded-2xl border border-brand-950 bg-white p-6 dark:bg-white/[0.03] flex items-center justify-center h-full">
-        <Loader2 className="animate-spin w-6 h-6 text-brand-950 dark:text-brand-400" />
+      <div className="rounded-2xl border border-brand-500 bg-white p-6 dark:bg-white/[0.03] flex items-center justify-center h-full">
+        <Loader2 className="animate-spin w-6 h-6 text-brand-500 dark:text-brand-400" />
         <span className="ml-2 text-sm text-gray-500 dark:text-gray-400">
           Loading course breakdown...
         </span>
@@ -47,7 +47,7 @@ export default function CourseStatusBreakdown() {
 
   const items = [
     {
-      icon: <BookOpen className="w-6 h-6 text-brand-950 dark:text-brand-400" />,
+      icon: <BookOpen className="w-6 h-6 text-brand-500 dark:text-brand-400" />,
       label: "Published",
       count: breakdown.published,
       color: "brand",
@@ -67,13 +67,13 @@ export default function CourseStatusBreakdown() {
   ];
 
   return (
-    <div className="rounded-2xl border border-brand-950 bg-white p-6 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
+    <div className="rounded-2xl border border-brand-500 bg-white p-6 dark:border-gray-800 dark:bg-white/[0.03] h-full transition-all">
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-white/90">
           Course Breakdown
         </h3>
-        <button className="flex items-center gap-1 text-sm text-brand-950 dark:text-brand-400 hover:underline">
+        <button className="flex items-center gap-1 text-sm text-brand-500 dark:text-brand-400 hover:underline">
           Manage <ArrowRight className="w-4 h-4" />
         </button>
       </div>
@@ -81,7 +81,7 @@ export default function CourseStatusBreakdown() {
       {/* Dual Progress Bar */}
       <div className="relative w-full h-3 rounded-full bg-gray-100 dark:bg-gray-800 mb-5 overflow-hidden">
         <div
-          className="absolute top-0 left-0 h-full bg-brand-950 dark:bg-brand-400 transition-all"
+          className="absolute top-0 left-0 h-full bg-brand-500 dark:bg-brand-400 transition-all"
           style={{ width: `${items[0].percent}%` }}
         ></div>
         <div
@@ -98,7 +98,7 @@ export default function CourseStatusBreakdown() {
         {items.map((it) => (
           <div
             key={it.label}
-            className={`flex items-center justify-between rounded-lg p-4 ${it.bg} border border-brand-950 dark:border-gray-800 hover:scale-105 transition-transform`}
+            className={`flex items-center justify-between rounded-lg p-4 ${it.bg} border border-brand-500 dark:border-gray-800 hover:scale-105 transition-transform`}
           >
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-full bg-white/30 dark:bg-white/10">
@@ -116,7 +116,7 @@ export default function CourseStatusBreakdown() {
             <span
               className={`text-2xl font-bold min-w-[3rem] text-right ${
                 it.color === "brand"
-                  ? "text-brand-950 dark:text-brand-400"
+                  ? "text-brand-500 dark:text-brand-400"
                   : "text-gray-600 dark:text-gray-400"
               }`}
             >

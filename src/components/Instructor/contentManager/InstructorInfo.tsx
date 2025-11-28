@@ -40,7 +40,7 @@ const InstructorInfo: FC<InstructorInfoProps> = ({
           </p>
         )}
 
-        <p className="text-gray-500 dark:text-gray-400 flex items-center justify-center sm:justify-start gap-2 hover:text-brand-950 transition">
+        <p className="text-gray-500 dark:text-gray-400 flex items-center justify-center sm:justify-start gap-2 hover:text-brand-500 transition">
           <Mail size={16} className="text-gray-400" />
           <a href={`mailto:${email}`} className="underline">
             {email}

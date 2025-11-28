@@ -54,7 +54,7 @@ export function ReviewCourseCard({ course }: Readonly<ReviewCourseCardProps>) {
         <div className="mt-5">
           <Link
             to={`/instructor/reviews/courses/${course.id}`}
-            className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-semibold text-white bg-brand-950 rounded-lg hover:bg-brand-700 transition"
+            className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-semibold text-white bg-brand-500 rounded-lg hover:bg-brand-700 transition"
           >
             <Star className="w-4 h-4 mr-2" />
             See Student Feedback

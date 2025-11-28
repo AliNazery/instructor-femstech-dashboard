@@ -63,7 +63,7 @@ export default function AllReviewsPage() {
           {reviews.map((rv) => (
             <div
               key={rv.id}
-              className="rounded-xl border border-brand-950 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-5 shadow-sm hover:shadow-md transition"
+              className="rounded-xl border border-brand-500 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-5 shadow-sm hover:shadow-md transition"
             >
               <div className="flex items-center gap-3 mb-3">
                 {rv.student?.avatar_url ? (

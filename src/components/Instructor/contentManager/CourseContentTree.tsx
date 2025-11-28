@@ -110,7 +110,7 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
           <motion.div
             key={mod.id}
             layout
-            className="border border-brand-950 rounded-lg bg-white dark:bg-neutral-950 shadow-sm hover:shadow-md transition-shadow"
+            className="border border-brand-500 rounded-lg bg-white dark:bg-neutral-950 shadow-sm hover:shadow-md transition-shadow"
           >
             <div
               className="flex flex-col sm:flex-row sm:items-center justify-between px-4 py-2 
@@ -129,14 +129,14 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
                     <ChevronRight size={16} className="text-gray-500" />
                   )}
                   {isOpen ? (
-                    <FolderOpen size={18} className="text-brand-950" />
+                    <FolderOpen size={18} className="text-brand-500" />
                   ) : (
                     <Folder size={18} className="text-gray-400" />
                   )}
                   <span
                     className={`transition-colors ${
                       isOpen
-                        ? "text-brand-950 dark:text-brand-400"
+                        ? "text-brand-500 dark:text-brand-400"
                         : "text-gray-800 dark:text-gray-100"
                     }`}
                   >
@@ -148,7 +148,7 @@ export default function CourseContentTree({ courseId }: Readonly<Props>) {
               <div className="flex flex-wrap gap-2 sm:gap-3 justify-end w-full sm:w-auto px-4 py-2 /* UPDATED: wrap and full width for mobile buttons */">
                 <button
                   onClick={() => handleEdit(mod)}
-                  className="flex items-center gap-2 text-sm text-brand-950 hover:text-brand-700 
+                  className="flex items-center gap-2 text-sm text-brand-500 hover:text-brand-700 
                 transition-colors"
                 >
                   <Pencil size={16} />

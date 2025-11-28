@@ -32,7 +32,7 @@ export default function MostPopularCourses() {
   const courses = data.data.slice(0, 4);
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-brand-950 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-xl transition-all">
+    <div className="overflow-hidden rounded-2xl border border-brand-500 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-xl transition-all">
       <div className="p-4">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-2">
@@ -42,7 +42,7 @@ export default function MostPopularCourses() {
 
           <Link
             to="/instructor/popular-courses"
-            className="text-sm text-brand-950 hover:underline font-medium"
+            className="text-sm text-brand-500 hover:underline font-medium"
           >
             View All →
           </Link>
@@ -79,7 +79,7 @@ export default function MostPopularCourses() {
                     className={`hover:scale-[1.01] hover:shadow-lg transition-transform cursor-pointer rounded-xl 
                     ${
                       idx < courses.length - 1
-                        ? "border-b border-brand-950 dark:border-gray-800"
+                        ? "border-b border-brand-500 dark:border-gray-800"
                         : ""
                     }`}
                   >
@@ -170,7 +170,7 @@ export default function MostPopularCourses() {
 //   const courses = data.data.slice(0, 4);
 
 //   return (
-//     <div className="overflow-hidden rounded-2xl border border-brand-950 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-xl transition-all">
+//     <div className="overflow-hidden rounded-2xl border border-brand-500 bg-white dark:border-gray-800 dark:bg-white/[0.03] shadow-xl transition-all">
 //       <div className="p-4">
 //         <div className="flex justify-between items-center mb-6">
 //           <h3 className="text-xl font-semibold text-gray-800 dark:text-white/90">
@@ -179,7 +179,7 @@ export default function MostPopularCourses() {
 
 //           <Link
 //             to="/instructor/popular-courses"
-//             className="text-sm text-brand-950 hover:underline font-medium"
+//             className="text-sm text-brand-500 hover:underline font-medium"
 //           >
 //             View All →
 //           </Link>
@@ -214,7 +214,7 @@ export default function MostPopularCourses() {
 //                   className={`hover:scale-[1.01] hover:shadow-lg transition-transform cursor-pointer rounded-xl
 //                   ${
 //                     idx < courses.length - 1
-//                       ? "border-b border-brand-950 dark:border-gray-800"
+//                       ? "border-b border-brand-500 dark:border-gray-800"
 //                       : ""
 //                   }`}
 //                 >

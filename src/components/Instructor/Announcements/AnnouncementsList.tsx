@@ -72,7 +72,7 @@ const handleEdit = (announcement: Announcement) => {
             <div
               key={a.id}
               className={`bg-white border rounded-lg shadow-sm transition-all duration-200 p-4 space-y-3
-          ${a.is_pinned ? "border-brand-950 bg-yellow-50" : "hover:shadow-lg"}`}
+          ${a.is_pinned ? "border-brand-500 bg-yellow-50" : "hover:shadow-lg"}`}
             >
               {/* ===== Desktop / Tablet Layout ===== */}
               <div className="hidden sm:flex justify-between items-start">
@@ -80,7 +80,7 @@ const handleEdit = (announcement: Announcement) => {
                   <h3 className="text-lg font-semibold flex items-center gap-2">
                     {a.title}
                     {a.is_pinned && (
-                      <Pin size={16} className="text-brand-950" />
+                      <Pin size={16} className="text-brand-500" />
                     )}
                   </h3>
                   <div className="text-xs text-gray-400">
@@ -97,7 +97,7 @@ const handleEdit = (announcement: Announcement) => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleEdit(a)}
-                        className="bg-white text-brand-950 border border-brand-950 rounded-lg px-4 py-2 text-sm font-medium shadow-sm hover:bg-brand-700 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-200"
+                        className="bg-white text-brand-500 border border-brand-500 rounded-lg px-4 py-2 text-sm font-medium shadow-sm hover:bg-brand-700 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-200"
                       >
                         Edit
                       </button>
@@ -146,7 +146,7 @@ const handleEdit = (announcement: Announcement) => {
                   <div className="flex justify-between gap-2 mt-4">
                     <button
                       onClick={() => handleEdit(a)}
-                      className="flex-1 bg-white text-brand-950 border border-brand-950 rounded-lg px-3 py-2 text-sm font-medium shadow-sm hover:bg-brand-700 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-200"
+                      className="flex-1 bg-white text-brand-500 border border-brand-500 rounded-lg px-3 py-2 text-sm font-medium shadow-sm hover:bg-brand-700 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand-200"
                     >
                       Edit
                     </button>

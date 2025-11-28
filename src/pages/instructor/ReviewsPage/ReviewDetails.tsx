@@ -119,7 +119,7 @@ const [approveReview] = useApproveReviewMutation();
             value="all"
             className={`px-4 py-1.5 rounded-lg text-sm font-medium ${
               tab === "all"
-                ? "bg-brand-950 text-gray-800 dark:bg-gray-900 shadow"
+                ? "bg-brand-500 text-gray-800 dark:bg-gray-900 shadow"
                 : "text-gray-500 dark:text-gray-400"
             }`}
           >
@@ -129,7 +129,7 @@ const [approveReview] = useApproveReviewMutation();
             value="approved"
             className={`px-4 py-1.5 rounded-lg text-sm font-medium ${
               tab === "approved"
-                ? "bg-brand-950 dark:bg-gray-900 shadow"
+                ? "bg-brand-500 dark:bg-gray-900 shadow"
                 : "text-gray-500 dark:text-gray-400"
             }`}
           >
@@ -139,7 +139,7 @@ const [approveReview] = useApproveReviewMutation();
             value="unapproved"
             className={`px-4 py-1.5 rounded-lg text-sm font-medium ${
               tab === "unapproved"
-                ? "bg-brand-950 dark:bg-gray-900 shadow"
+                ? "bg-brand-500 dark:bg-gray-900 shadow"
                 : "text-gray-500 dark:text-gray-400"
             }`}
           >
